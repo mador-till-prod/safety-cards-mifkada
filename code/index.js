@@ -207,7 +207,7 @@ function beforePractice() {
                 ),
                 El("div", { cls: "beforePractice-instruction-container" },
                     El("div", {},
-                        El("img", { attributes: { class: "icon2", src: "../assets/images/practice/beforePractice_popup/timer_icon.svg" } }),
+                        El("img", { attributes: { class: "icon2", src: "../assets/images/practice/beforePractice_popup/slide_icon.svg" } }),
                         El("div", { cls: "text" },
                             El("b", {}, " דקה"),
                             El("br", {}),
