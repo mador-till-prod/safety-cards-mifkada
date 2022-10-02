@@ -37,6 +37,7 @@ const DATA = {
                 correctAns: "ans4"
             }
         ],
+        "amountOfQuestions": 2,
         "learningContent": {
             "בטיחות בשגרה": {       
                  "בטיחות בשגרה": [
@@ -64,7 +65,6 @@ const DATA = {
                 ]
             },
         },
-        "amountOfQuestions": 2,
     },
     // נושא
     'בטיחות באש': {
@@ -90,6 +90,7 @@ const DATA = {
                 correctAns: "ans1"
             },
         ],
+        "amountOfQuestions": 2,
         "learningContent": {
             "בטיחות באש": {       
                 "בטיחות באש": [
@@ -108,7 +109,6 @@ const DATA = {
                 ]
             }
         },
-        "amountOfQuestions": 2,
     },
     // נושא
     'בטיחות בדרכים': {
@@ -139,6 +139,7 @@ const DATA = {
                 correctAns: "ans4"
             }
         ],
+        "amountOfQuestions": 2,
         "learningContent": { 
             'בטיחות בדרכים': {
                 "1) בטיחות בדרכים ": [ 
@@ -172,7 +173,6 @@ const DATA = {
             }
            
         },
-        "amountOfQuestions": 3,
     }
 };
 
