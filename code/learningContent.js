@@ -61,6 +61,14 @@ const DATA = {
                         content2: "הנך מחויב/ת להגיע לכל הדרכה/כנס/שעת בטיחות וכל מופע נוסף בנושא בטיחות, שתזומן/י אליו (אחריותהמפקדים לאפשר לך הגעה למופעים אלו).",
                         subTitle3: "",
                         content3: ""
+                    },
+                    {
+                        cardType: "video",
+                        video: "../assets/images/videos&photos/vid7.mp4",
+                    },
+                    {
+                        cardType: "video",
+                        video: "../assets/images/videos&photos/vid8.mp4",
                     }
                 ]
             },
@@ -105,6 +113,40 @@ const DATA = {
                         content3: "",
                         subTitle4: "",
                         content4: "",
+                    },
+                    {
+                        cardType: "listDots5",
+                        subTitle: "בעת גילוי שריפה:",
+                        li1: "נתקו את מקור החשמל למבנה או למבנה דרך מפסק הזרם הראשי. כמו כן, נתקו גנראטור ומערכות אל-פסק (UPS) במידה וקיימות במבנה.",
+                        li2: "נתקו מקור אנרגיה כגון: דלק/גז אם מחובר למבנה",
+                        li3: "פנו אנשים מהמבנה או מהמתקן במידת האפשר",
+                        li4: "הזעיקו את צוות הכוננות היחידתי/ כוחות כיבוי אש במידת הצורך",
+                        li5: "הזעיקו כוחות רפואה (צבאיים,אזרחיים) במידת הצורך."     
+                    },
+                    {
+                        cardType: "listDots3",
+                        subTitle: "פעלו לכיבוי האש כלהלן:",
+                        li1: ".הפעילו את אמצעי הכיבוי המתאים ביותר בהתאם לסוג השריפה",
+                        li2: "אם הוזעקו כוחות אש ופינוי מחוץ ליחידה, הציבו חייל בשער היחידה לקליטת הכוחות (מכבי אש, מגן דוד אדום) ולהכוונתם למקום האירוע.",
+                        li3: "הגישו עזרה לכוחות הסיוע.",     
+                    },
+                    {
+                        cardType: "listDots3",
+                        subTitle: "עם גמר פעולות הכיבוי נקטו פעולות אלה:",
+                        li1: "בודדו את האיזור - הרחיקו סקרנים ומנעו את כניסתם מקום האירוע.",
+                        li2: "הציבו צופי אש (מחוץ למקום האירוע) לגילוי התלקחות חוזרת.",
+                        li3: `דווחו מיד על האירוע למפקד הממונה, למבק"א/ תחום בטיחות האש ולחמ"ל` ,
+                    },
+                    {
+                        cardType: "listDots3",
+                        subTitle: "טלפונים לשעת חירום:",
+                        li1: `כבאות והצלה (כב"ה): 102`,
+                        li2: `מד"א: 101`,
+                        li3: `משטרת ישראל: 100`,  
+                    },
+                    {
+                        cardType: "video",
+                        video: "../assets/images/videos&photos/vid4.mp4",
                     }
                 ]
             }
@@ -155,6 +197,10 @@ const DATA = {
                         subTitle4: "חניון ההיסעים",
                         content4: "א. הירידה והעלייה לאוטובוס תעשה בזהירות רק מהמדרכה שברציפים ורק לאחר שהאוטובוס ביצע עצירהמלאה.<br>ב. אין לעמוד על שפת המדרכה ברציפים, אין לרדת מהמדרכה לאספלט.<br>ג. בנסיע",
                     },
+                    {
+                        cardType: "video",
+                        video: "../assets/images/videos&photos/vid1.mp4"
+                    }
                 ],
                 "2) בטיחות בדרכים ": [ 
                     {
@@ -255,6 +301,16 @@ CARD_TYPES._3titles_3text = {
         card.querySelector(".content2").innerHTML = json.content2;
         card.querySelector(".sub-title3").innerHTML = json.subTitle3;
         card.querySelector(".content3").innerHTML = json.content3;
+    }
+}
+CARD_TYPES.listDots5 = {
+    init(card, json) {
+        card.querySelector(".sub-title").innerHTML = json.subTitle;
+        card.querySelector(".li1").innerHTML = json.li1;
+        card.querySelector(".li2").innerHTML = json.li2;
+        card.querySelector(".li3").innerHTML = json.li3;
+        card.querySelector(".li4").innerHTML = json.li4;
+        card.querySelector(".li5").innerHTML = json.li5;
     }
 }
 CARD_TYPES.listDots3 = {
